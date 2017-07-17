@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/status"
+        android:layout_width="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/headline"
+        app:layout_constraintRight_toRightOf="@+id/headline"
+        android:layout_height="10dp" />
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        app:layout_constraintLeft_toLeftOf="@id/headline"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/headline"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintLeft_toRightOf="@+id/timestamp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        app:layout_goneMarginTop="0dp" />
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/timestamp"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="7dp" />
+
+</android.support.constraint.ConstraintLayout>
